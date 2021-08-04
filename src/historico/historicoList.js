@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ListItem from "./ListItem";
-import Card from "./Card"
 
 const List = () => {
   const [data, setData] = useState([]);
@@ -26,7 +25,6 @@ const List = () => {
   const result = data.filter((item) =>
     item.name.toLowerCase().includes(input.toLowerCase())
   );
-//   console.log(`RESULT`, result)
 
   useEffect(() => {
     const getData = async () => {
