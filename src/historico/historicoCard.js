@@ -43,7 +43,7 @@ const SimpleCard = (props) => {
       <CardContent>
       {/* <Image 
         src={props.img}
-      /> */}
+      /> ALternativa a component='img' , importando arriba*/}
         
         <Typography variant="h5" component="h2">
           {props.name}

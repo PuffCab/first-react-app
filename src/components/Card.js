@@ -8,9 +8,13 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Image from 'material-ui-image';
 
+
+
+
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 200,
+    // maxWidth: 300,
   },
   bullet: {
     display: 'inline-block',
@@ -18,7 +22,7 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    fontSize: 40,
   },
   pos: {
     marginBottom: 12,
@@ -27,23 +31,24 @@ const useStyles = makeStyles({
 
 const SimpleCard = (props) => {
   
-  console.log(`PROPs`, props.name )
+//   console.log(`PROPs`, props.name )
     const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
       <CardMedia
         
         component="img"
         src={props.imagen}
         alt={props.name}
+        title={props.name}
 
         />
       <CardContent>
       {/* <Image 
         src={props.img}
-      /> */}
+      /> ALternativa a component='img' */}
         
         <Typography variant="h5" component="h2">
           {props.name}
