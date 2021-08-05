@@ -65,7 +65,7 @@ const SimpleCard = (props) => {
       </CardContent>
       <CardActions>
         <Button size="small">
-            <button onClick={() => setShow(true)}>Show modal</button>
+            <button onClick={() => setShow(true)}>more info</button>
             <Modal title={props.name} onClose={() => setShow(false)} show={show}>
                 <p>Species : {props.species}</p>
                 <p>Status : {props.status}</p>
