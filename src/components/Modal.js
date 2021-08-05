@@ -6,7 +6,7 @@ const Modal = props => {
     if (!props.show) {
         return null
     }
-
+console.log(`props`, props.children)
     return (
         <div className="modal" onClick={props.onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>

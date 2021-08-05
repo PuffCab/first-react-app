@@ -28,3 +28,9 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solic #eee;
   }
+
+
+  .inputStyle {
+    margin-bottom: 10px;
+  } 
+  /* note that this style for the input from list.js without importing, it reaches list.js */

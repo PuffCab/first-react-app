@@ -44,7 +44,7 @@ const List = () => {
   console.log(`input`, input);
   return (
     <div>
-      <input type="text" name={input} onChange={onInputChange}></input>
+      <input type="text" name={input} onChange={onInputChange} className="inputStyle"></input>
       {result &&
         result.map((item) => {
           return <ListItem key={item.id} character={item} />;
