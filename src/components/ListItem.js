@@ -17,13 +17,13 @@ const ListItem = (props) => {
 
     return (
         <div>
-           <Grid container spacing={4} justify='center'>
+           {/* <Grid container spacing={4} justify='center'> */}
                 <Grid item xs={6} sm={3}>
 
                     <Card imagen={character.image} name={character.name} species={character.species} status={character.status}  />
                     
                 </Grid> 
-           </Grid>
+           {/* </Grid> */}
            
            {/* <p>{character.name}</p>
             <img src={character.image} alt="rick&morty pictures" /> */}

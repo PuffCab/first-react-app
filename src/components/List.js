@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListItem from "./ListItem";
 import Card from "./Card"
-
+import { Grid } from '@material-ui/core/';
 const List = () => {
   const [data, setData] = useState([]);
   const [input, setInput] = useState("");
@@ -45,10 +45,14 @@ const List = () => {
   return (
     <div>
       <input type="text" name={input} onChange={onInputChange} className="inputStyle" placeholder="Search..." ></input>
+      <Grid container spacing={4} justify='center'>
       {result &&
+      
+        
         result.map((item) => {
           return <ListItem key={item.id} character={item} />;
         })}
+        </Grid>
     </div>
   );
 };

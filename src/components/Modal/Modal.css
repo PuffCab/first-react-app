@@ -31,6 +31,7 @@
 
 
   .inputStyle {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
   } 
   /* note that this style for the input from list.js without importing, it reaches list.js */
