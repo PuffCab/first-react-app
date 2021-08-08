@@ -13,7 +13,7 @@ const ListItem = (props) => {
 
     const classes = useStyles();
     const character = props.character
-    console.log(`character`, character)
+    // console.log(`character`, character)
 
     return (
         <div>
